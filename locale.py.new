@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+
+import sys
+
+reload(sys)  
+sys.setdefaultencoding("UTF8")
+# LANGUAGE FILE
+
+START_MSG = str("Hey! 😊 \n \nWelcome to the *ZigZagBot*! 😱🚀 \nDeveloped by @WebShark25! \n \nAll bot commands: \n💢 _/help_ - Get help message \n💢 _/time_ - Gets current time in IRST \n💢 _/calc_ - Lets do some maths \n💢 _/support_ - Chat with us! \n💢 _/sendcontact_ - Forward contact to admin \n💢 _Send feedback_ - Send feedback! \n💢 _/echo <msg>_ - Echoes the message \n💢 _/id_ - Get your ID & Group's ID \n \n_More commands comming soon!_ \n \nI Hope you enjoy it! ").encode("utf-8")
+START_BUTTONS = ("/id", "/echo", "/time", "/feedback", "/sendcontact", "/calc", "/support", "Soon!", "Soon!") # SPLITS 3 PER LINE
+TEST_MSG = "This is a test message."
+SHARE_CONTACT_MSG = "Please share your contact to the bot (in a private message)."
+NO_ECHO_IN_SUPERGP_MSG = "Unfortunately I wont reply to messages sent in a supergroup to prevent spamming."
+ECHO_REPLY_MSG = "Please enter a text so I reply to it!"
+ERROR_MSG = "Error occured."
+CONTACT_RECIEVED_MSG = "New contact recieved:"
+CONTACT_FORWARDED_MSG = "Contact successfully forwarded!"
+# {0} = name | {1} = gp title
+GP_GREETING_MSG = "Hey *{0}*! \n \nWelcome to the group *{1}* 😊 \n \n_Have fun & Enjoy!_"
+GP_FAREWELL_MSG = "Oh no 😕 \n*{0} left the group ☹️"
+# {0} = name | {1} = id | {2} = gp id
+ID_MSG = "💢 Your name: *{0}* \n💢 Your ID: *{1}* \n"
+INGP_ID_MSG = "💢 Group ID: *{2}* \n"
+REPLIED_ID_MSG = "💢 Users ID: *{3}* \n"
+FORWARDED_ID_MSG = "💢 Users ID: *{4}* \n"
+NON_ADMIN_ADDED_BOT_MSG = "Im sorry ☹️ \nIm not authorized to join groups by normal members. \nOnly *admins* can add me to groups."
+BOT_JOINED_MSG = "Hey😧! I am here, At your service."
+MESSANGER_JOIN_MSG = "Now sending feedback. \nPlease enter your message!"
+MESSANGER_LEAVE_MSG = "Thanks for your feedback! Exiting."
+WEBSHOT_CAPTION_MSG = "By the ZigZag bot"
+COMMAND_NOT_FOUND = "Im sorry 😢 But the command you entered does not exists."
+BANNED_MSG = ":O You got banned from the bot!"
+UNBANNED_MSG = "Welcome back! You are unbanned now ;)"
+GP_STATUS_MSG = "⚡️ All group messages: {0}"
+TIME_MSG = "⚡️ Date & Time: {0}"
+JOINED_MESSENGER_MSG = "⚡️ Now chatting with support! Please wait for response."
+ALREADY_IN_MESSENGER_MSG = "You are already chatting with support! to exit, type '/leave'"
+NOT_IN_MESSENGER_MSG = "You are not chatting with support! to start, type '/support'"
+LEFT_MESSENGER_MSG = "⚡️ We hope you enjoyed ;) Leaving the messenger."
